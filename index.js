@@ -1,9 +1,13 @@
 var io = require('socket.io')(8000);
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
 io.on('connection', function(socket) {
-    socket.emit('ack')
-    socket.on('message', function(data) {
-        console.log('got data : ' + data)
-        socket.emit('ack')
+    socket.on('line', function(line) {
+    	console.log(line)
     })
 });
