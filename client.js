@@ -7,8 +7,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-socket.on('connect', function(socket) {});
-
-rl.on('line',function(line){
-	socket.emit('line',line)
+rl.on('line', function(line) {
+    socket.emit('line', line)
 })
