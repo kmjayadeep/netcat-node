@@ -1,7 +1,7 @@
 {
-  "name": "socket",
+  "name": "ncNode",
   "version": "1.0.0",
-  "description": "",
+  "description": "PCHI Assignment: Example of parallel communication",
   "main": "index.js",
   "scripts": {
     "start":"node index"
